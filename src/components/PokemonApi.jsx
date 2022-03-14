@@ -5,7 +5,6 @@ const PokemonApi = () => {
     let [pokemonList, setPokemonList] = useState([])
 
     const getPokemon = () => {
-        console.log("starting")
         fetch("https://pokeapi.co/api/v2/pokemon?limit=1126")
             .then((response) => {
                 return response.json()
