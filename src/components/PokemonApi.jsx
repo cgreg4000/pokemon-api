@@ -12,6 +12,9 @@ const PokemonApi = () => {
             .then((response) => {
                 setPokemonList(response.results)
             })
+            .catch((err)=>{
+                console.log(err)
+            })
     }
 
     return (
